@@ -91,3 +91,19 @@
         transform: rotate(-360deg);
     }
 }
+
+.ex-11-icon:hover {
+    animation-name: rotate-and-back;
+    animation-duration: 3s;
+}
+
+@keyframes rotate-and-back {
+    
+    0% {
+        transform: rotate(0deg);
+    }
+
+    90% {
+        transform: rotate(340deg);
+    }
+}
