@@ -107,3 +107,48 @@
         transform: rotate(340deg);
     }
 }
+
+
+.ex-12-button:hover .ex-12-top-white {
+    animation-name: move-around-top;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation-name: move-around-bottom;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes move-around-top {
+    
+    0% {
+        left: 10px;
+    }
+
+    50% {
+        left: calc(100% - 70px);
+    }
+
+    100% {
+        left: 10px;
+    }
+}
+
+@keyframes move-around-bottom {
+    
+    0% {
+        right: 10px;
+    }
+
+    50% {
+        right: calc(100% - 70px);
+    }
+
+    100% {
+        right: 10px;
+    }
+}
